@@ -43,4 +43,19 @@ drwxr-xr-x 8 vm vm 4.0K Jun 30 00:02 ..
 
 #You can see that id_rsa has restricted access to users and id_rsa.pub is supposed to be readable by others.
 
+#There are many people on the Internet who are always looking for vulnerabilities on systems, websites, etc.
+#You can check your own server history to see who all tried to attempt to login into your server (autentication attempts are logged here) using this command:
+
+sudo cat /var/log/auth.login
+
+#In the output, you may see a long list of authentication attempts by random requests on the Internet. 
+#Any device on with port 22 will witness this activity.
+
+#You can see the number of people trying to authenticate with 'invalid username' using the command:
+
+sudo grep invalid /var/log/auth.log | wc -l
+
+#You can also see the number of people trying to authenticate as 'root' using the command:
+
+sudo grep invalid /var/log/auth.log | wc -l
 
