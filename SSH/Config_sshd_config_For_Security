@@ -1,0 +1,10 @@
+#This is done in the /etc/ssh file.
+#Using ls you can see the contents of this file.
+#You may see sshd_config file here.
+
+#Things we will do/check to harden ssh:
+#- Consider whether you want to change from default port of 22
+#- Ensure Protocol is set to 2
+#- Disable root remote access
+#- Disable Challenge Remote Authentication
+#- Disable Password Authentication
