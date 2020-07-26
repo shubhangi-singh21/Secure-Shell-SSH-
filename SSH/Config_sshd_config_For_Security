@@ -39,6 +39,16 @@ ssh vm@192.168.254.108 -p 222
 
 diff sshd_config sshd_config.1
 
+#Use command:
+
+sudo service ssh restart
+
+ssh vm@192.168.254.108
+
+sudo su -
+
+exit
+
 
 
 
