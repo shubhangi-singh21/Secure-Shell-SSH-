@@ -24,5 +24,19 @@ enabled = true
 
 #Save and quit the editor.
 
+#Installing sendmail
 
+sudo apt install sendmail iptables-persistent
+
+#A dialog block may appear, hit yes.
+
+#Enabling fail2ban using command:
+
+sudo service fail2ban start
+
+#You can use this command to chack the status:
+
+sudo fail2ban client status sshd
+
+#It will list the IP address banned.
 
