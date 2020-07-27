@@ -1,4 +1,3 @@
-[Fail2ban](https://www.digitalocean.com/community/tutorials/how-fail2ban-works-to-protect-services-on-a-linux-server)
 #Installing fail2ban
 
 sudo apt update
